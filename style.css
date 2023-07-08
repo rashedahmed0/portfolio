@@ -1,0 +1,339 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+    border-radius: 5px;
+    background: #FD6E0A;
+    color: white;
+    border: 2px solid #FD6E0A;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 18px 35px;
+    transition: 0.6s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #FD6E0A;
+    border: 2px solid #FD6E0A;
+}
+
+.btn1 {
+    border-radius: 5px;
+    background: transparent;
+    color: #FD6E0A;
+    border: 2px solid #FD6E0A;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 18px 35px;
+    transition: 0.6s;
+}
+
+.btn1:hover {
+    background: #FD6E0A;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* header section */
+header {
+    margin-bottom: 100px;
+    background-image: url(./images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-color: #FFF8F3;
+}
+
+.navbar {
+    padding-bottom: 23px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {}
+
+.logo span {
+    color: #FD6E0A;
+}
+
+.logo h1 {
+    color: #181818;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 45px;
+    font-weight: 800;
+}
+
+nav {}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 51px;
+}
+
+nav ul li a {
+    color: black;
+}
+
+/* banner section */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-text {
+    flex-basis: 48%;
+}
+
+.banner-text h2 {
+    margin-bottom: 5px;
+    color: #474747;
+    font-family: Open Sans;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.banner-text h1 {
+    margin-bottom: 20px;
+    color: #181818;
+    font-family: Open Sans;
+    font-size: 85px;
+    font-weight: 700;
+}
+
+.banner-text p {
+    color: #757575;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.banner-text a {}
+
+.banner-img {
+    width: 100%;
+    text-align: right;
+    flex-basis: 48%;
+
+}
+
+.banner-img img {
+    width: 85%;
+    margin-top: 52px;
+    margin-bottom: -4px;
+}
+
+/* about section */
+.about {}
+
+.about-bg {
+    padding: 30px;
+    width: 80%;
+    margin: auto;
+    background-color: #FFF8F3;
+
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    color: #181818;
+
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.title p {
+    padding: 30px 0;
+    color: #757575;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.about-item {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.about-card {
+
+    text-align: center;
+
+}
+
+.about-card p {
+    color: #757575;
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.about-card h4 {
+    font-size: 20px;
+}
+
+/* what i do section */
+.what-i-do {
+    margin-top: 100px;
+}
+
+.what-i-do-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.what-i-do-card {
+    margin: 10px;
+    padding: 25px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    flex-basis: 21%;
+}
+
+.what-i-do-card img {
+    margin-bottom: 31px;
+}
+
+.what-i-do-card h5 {
+    color: #181818;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.what-i-do-card p {
+    margin-top: 20px;
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+/* summay section */
+.summary {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.summary-btn {
+    text-align: center;
+
+}
+
+.summary-btn button {
+    border-radius: 5px;
+    background: #FD6E0A;
+    color: white;
+    border: 2px solid #FD6E0A;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 18px 35px;
+    transition: 0.6s;
+    margin-top: 50px;
+}
+
+.summary h1 {
+    margin-bottom: 20px;
+}
+
+.edu-exp {
+    display: flex;
+}
+
+.education {
+    margin-right: 10px;
+}
+
+.education h2 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: #474747;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.education-card {}
+
+.education-card h3 {
+    color: #474747;
+    font-size: 25px;
+    font-weight: 700;
+
+}
+
+.education-card h5 {
+    margin-top: 10px;
+    color: #757575;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.education-card p {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+.experience {
+    margin-left: 10px;
+}
+
+.experience h2 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: #474747;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.experience-card {}
+
+.experience-card h3 {
+    color: #474747;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.experience-card h5 {
+    margin-top: 10px;
+    color: #757575;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.experience-card p {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+}
