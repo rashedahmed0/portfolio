@@ -4,6 +4,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+
 }
 
 .btn {
@@ -40,18 +41,33 @@
 }
 
 .container {
-    width: 80%;
+    width: 75%;
     margin: auto;
 }
 
+
 /* header section */
 header {
+    overflow-x: hidden;
+    position: relative;
     margin-bottom: 100px;
     background-image: url(./images/header_bg.png);
     background-repeat: no-repeat;
     background-position: bottom right;
     background-color: #FFF8F3;
+    background-size: 50%;
 }
+
+.header {
+    background-image: url(./images/developer.png);
+    background-repeat: no-repeat;
+    background-size: 6.5%;
+    background-position: 2%;
+    padding-bottom: 108px;
+}
+
+
+
 
 .navbar {
     padding-bottom: 23px;
@@ -90,6 +106,7 @@ nav ul li a {
 
 /* banner section */
 .banner {
+    padding: 50px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,12 +114,13 @@ nav ul li a {
 
 .banner-text {
     flex-basis: 48%;
+    margin-bottom: 20px;
 }
 
 .banner-text h2 {
     margin-bottom: 5px;
     color: #474747;
-    font-family: Open Sans;
+
     font-size: 45px;
     font-weight: 600;
 }
@@ -110,21 +128,21 @@ nav ul li a {
 .banner-text h1 {
     margin-bottom: 20px;
     color: #181818;
-    font-family: Open Sans;
-    font-size: 85px;
+    font-size: 80px;
     font-weight: 700;
 }
 
 .banner-text p {
     color: #757575;
-    font-family: Open Sans;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 30px;
     margin-bottom: 30px;
 }
 
-.banner-text a {}
+.banner-text a {
+    margin-bottom: 20px;
+}
 
 .banner-img {
     width: 100%;
@@ -134,9 +152,48 @@ nav ul li a {
 }
 
 .banner-img img {
-    width: 85%;
+    bottom: 5px;
+    left: 60%;
+    position: absolute;
+    width: 35%;
     margin-top: 52px;
     margin-bottom: -4px;
+}
+
+@media(max-width:576px) {
+    .btn {
+        font-size: 14px;
+        padding: 9px 13px;
+
+    }
+
+    .btn1 {
+        font-size: 14px;
+        padding: 9px 13px;
+    }
+
+    header {
+        overflow-x: inherit;
+        position: inherit;
+        background-image: none;
+        padding: 50px 0;
+
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-img {
+        margin-top: 100px;
+    }
+
+    .banner-img img {
+        position: absolute;
+        top: 56%;
+        left: 22%;
+        width: 52%;
+    }
 }
 
 /* about section */
@@ -165,7 +222,7 @@ nav ul li a {
     padding: 30px 0;
     color: #757575;
 
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 30px;
 }
@@ -184,7 +241,7 @@ nav ul li a {
 
 .about-card p {
     color: #757575;
-
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
@@ -224,12 +281,16 @@ nav ul li a {
 .what-i-do-card p {
     margin-top: 20px;
     color: #757575;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 28px;
 }
 
 /* summay section */
+hr {
+    margin-bottom: 20px;
+}
+
 .summary {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -291,13 +352,13 @@ nav ul li a {
 
 .education-card p {
     color: #757575;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 28px;
     margin-top: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #333;
-    margin-bottom: 20px;
+    /* border-bottom: 1px solid #333;
+    margin-bottom: 20px; */
 }
 
 .experience {
@@ -329,17 +390,18 @@ nav ul li a {
 
 .experience-card p {
     color: #757575;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 28px;
     margin-top: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #333;
-    margin-bottom: 20px;
+    /* border-bottom: 1px solid #333;
+    margin-bottom: 20px; */
 }
 
 /* footer section */
 footer {
+    padding-bottom: 100px;
     padding-top: 100px;
     background: #FFF8F3;
 }
@@ -362,7 +424,7 @@ footer {
 
 .footer-text p {
     color: #474747;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 28px;
     margin-bottom: 30px;
@@ -407,3 +469,38 @@ footer {
 }
 
 .footer-from form textarea {}
+
+
+
+
+@media(max-width:576px) {
+    .banner {
+        flex-direction: column;
+    }
+
+    .what-i-do-item {
+        flex-direction: column;
+    }
+
+    .edu-exp {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .footer-from {
+        margin-top: 20px;
+
+    }
+
+    .about-item {
+        flex-direction: column;
+    }
+
+    .about-card p {
+        margin-top: 20px;
+    }
+}
